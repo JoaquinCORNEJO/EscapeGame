@@ -1,28 +1,23 @@
-# Author: Joaquin CORNEJO
-# Scape game 
+# # Author: Joaquin CORNEJO
+# # Scape game 
+# 08/04/2022
+# ==========================
+from FUNCTIONS import *
 
-# Python libraries
-import numpy as np
-import turtle
-
-# My libraries
-from CONFIGS import * 
-from CASTLE import Castle
-
-# Set name of the file containing the castle map
-filename = fichier_plan
-
-# Initialize screen
+# Initialiser l'écran
 wn = turtle.Screen()
-
-# This turns off screen updates 
 wn.tracer(0) 
 
-# Create game
-Castle(filename)
+# Tracer le plan
+turtle.hideturtle()
+matrice = lire_matrice(fichier_plan)
+tracer_zone_chateau()
+tracer_zone_annonces()
+tracer_zone_inventaire()
+afficher_plan(matrice)
 
-# Update the screen to see the changes   
+# Mise à jourd de l'écran   
 wn.update() 
-
-# Keep the window open
 wn.mainloop() 
+
+
