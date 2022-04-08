@@ -285,7 +285,6 @@ def ramasser_objet(dictionnaire: dict, list_objets: list,
 # =================================
 # NIVEAU 4: QUESTIONS-REPONSES
 # =================================
-
 def poser_question(matrice, old_case, new_case, pas, questions):
 
     # Ecrire texte

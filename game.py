@@ -81,6 +81,3 @@ turtle.onkeypress(deplacer_bas, "Down")
 
 # Loop
 turtle.mainloop()
-
-
-
